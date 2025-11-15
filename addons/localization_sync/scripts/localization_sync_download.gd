@@ -74,6 +74,10 @@ func _contains_translation_files(file_names) -> bool:
 func _clear_folder_recursively(folder):
 	print("clearing folder: " + folder)
 	var parentDir = DirAccess.open(folder)
+	
+	if parentDir == null:
+		return
+
 	for file in parentDir.get_files():
 		print("removing file: " + file)
 		parentDir.remove(file)
