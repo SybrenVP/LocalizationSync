@@ -1,1 +1,1 @@
-./addons/localization_sync/README.md
+../addons/localization_sync/README.md
