@@ -11,17 +11,12 @@ config_version=5
 [application]
 
 config/name="LocalizationTest"
-run/main_scene="uid://dq37jvnqe43oc"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/localization_sync/plugin.cfg")
-
-[internationalization]
-
-locale/translations=["res://addons/localization_sync/csv/GAMEPLAY/GAMEPLAY.EN.translation", "res://addons/localization_sync/csv/GAMEPLAY/GAMEPLAY.NL.translation", "res://addons/localization_sync/csv/MAINMENU/MAINMENU.EN.translation", "res://addons/localization_sync/csv/MAINMENU/MAINMENU.NL.translation"]
 
 [rendering]
 
