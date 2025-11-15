@@ -26,7 +26,7 @@ This plugin allows you to manage your game's translations in a collaborative Goo
 
 Once enabled, you will see a new dockable window in the editor titled **Localization Auto Sync**.
 
-![Screenshot of the Localization Auto Sync Dock](addons/localization_sync/dockable_window.png)
+![Screenshot of the Localization Auto Sync Dock](screenshots/dockable_window.png)
 
 ### Step 1: Create the Spreadsheet
 1. In the Localization Auto Sync dock, click the **Install** button.
