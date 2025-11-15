@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cha5t882ejgwg"
+
+[deps]
+
+files=["res://addons/localization_sync/csv/MAINMENU/MAINMENU.EN.translation", "res://addons/localization_sync/csv/MAINMENU/MAINMENU.NL.translation"]
+
+source_file="res://addons/localization_sync/csv/MAINMENU/MAINMENU.csv"
+dest_files=["res://addons/localization_sync/csv/MAINMENU/MAINMENU.EN.translation", "res://addons/localization_sync/csv/MAINMENU/MAINMENU.NL.translation"]
+
+[params]
+
+compress=true
+delimiter=0

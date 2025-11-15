@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://2eruroryqtba"]
+
+[ext_resource type="Script" uid="uid://bj486br2aosdi" path="res://addons/localization_sync/scripts/localization_sync_connect.gd" id="2_rcew4"]
+[ext_resource type="Script" uid="uid://dj15b3bob0cut" path="res://addons/localization_sync/scripts/localization_sync_download.gd" id="3_on44p"]
+
+[node name="LocalizationSyncPanel" type="VBoxContainer"]
+offset_right = 258.0
+offset_bottom = 117.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Localization Auto Sync"
+horizontal_alignment = 1
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 2
+text = "Install"
+uri = "https://docs.google.com/spreadsheets/d/1Zq9dHfiID-aZKq3OgCoVpq4HFZIgliYjeNWFo3Xmhn0/copy"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "https://script.google.com/macros/s/AKfycbywA40CKDOfWao2TiUO9AdrkPiMLLF9rQ4uzJPRPZ7A2lxIGyOm7N-48A_IM793Z3Dw/exec"
+placeholder_text = "Google Web App URL"
+alignment = 1
+
+[node name="ConnectButton" type="Button" parent="HBoxContainer" node_paths=PackedStringArray("urlField", "sheetOptions")]
+visible = false
+layout_mode = 2
+text = "Connect"
+script = ExtResource("2_rcew4")
+urlField = NodePath("../LineEdit")
+sheetOptions = NodePath("../../HBoxContainer2/OptionButton")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="HBoxContainer/ConnectButton"]
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="HBoxContainer2"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SyncButton" type="Button" parent="HBoxContainer2" node_paths=PackedStringArray("url_field", "sheet_options")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Download"
+script = ExtResource("3_on44p")
+url_field = NodePath("../../HBoxContainer/LineEdit")
+sheet_options = NodePath("../OptionButton")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="HBoxContainer2/SyncButton"]
+
+[connection signal="pressed" from="HBoxContainer/ConnectButton" to="HBoxContainer/ConnectButton" method="_on_pressed"]
+[connection signal="request_completed" from="HBoxContainer/ConnectButton/HTTPRequest" to="HBoxContainer/ConnectButton" method="_on_request_completed"]
+[connection signal="item_selected" from="HBoxContainer2/OptionButton" to="HBoxContainer/ConnectButton" method="_on_option_button_item_selected"]
+[connection signal="pressed" from="HBoxContainer2/SyncButton" to="HBoxContainer/ConnectButton" method="_on_download_spreadsheet"]
+[connection signal="pressed" from="HBoxContainer2/SyncButton" to="HBoxContainer2/SyncButton" method="_on_pressed"]
+[connection signal="request_completed" from="HBoxContainer2/SyncButton/HTTPRequest" to="HBoxContainer2/SyncButton" method="_on_request_completed"]

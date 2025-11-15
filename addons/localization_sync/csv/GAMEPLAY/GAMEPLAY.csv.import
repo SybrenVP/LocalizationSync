@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bj885h2s580ho"
+
+[deps]
+
+files=["res://addons/localization_sync/csv/GAMEPLAY/GAMEPLAY.EN.translation", "res://addons/localization_sync/csv/GAMEPLAY/GAMEPLAY.NL.translation"]
+
+source_file="res://addons/localization_sync/csv/GAMEPLAY/GAMEPLAY.csv"
+dest_files=["res://addons/localization_sync/csv/GAMEPLAY/GAMEPLAY.EN.translation", "res://addons/localization_sync/csv/GAMEPLAY/GAMEPLAY.NL.translation"]
+
+[params]
+
+compress=true
+delimiter=0

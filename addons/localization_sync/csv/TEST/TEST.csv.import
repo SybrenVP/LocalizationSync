@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://daus80l0sidji"
+
+[deps]
+
+files=["res://addons/localization_sync/csv/TEST/TEST.EN.translation", "res://addons/localization_sync/csv/TEST/TEST.NL.translation"]
+
+source_file="res://addons/localization_sync/csv/TEST/TEST.csv"
+dest_files=["res://addons/localization_sync/csv/TEST/TEST.EN.translation", "res://addons/localization_sync/csv/TEST/TEST.NL.translation"]
+
+[params]
+
+compress=true
+delimiter=0

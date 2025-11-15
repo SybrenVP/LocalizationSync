@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://3l7jiqhu2oo4"
+
+[deps]
+
+files=["res://SysLoc - Sheet1.EN.translation", "res://SysLoc - Sheet1.NL.translation"]
+
+source_file="res://SysLoc - Sheet1.csv"
+dest_files=["res://SysLoc - Sheet1.EN.translation", "res://SysLoc - Sheet1.NL.translation"]
+
+[params]
+
+compress=true
+delimiter=0
