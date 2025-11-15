@@ -73,4 +73,4 @@ Once enabled, you will see a new dockable window in the editor titled **Localiza
 
 ## License
 
-[MIT License](addons/localization_sync/LICENSE.md)
+[MIT License](../addons/localization_sync/LICENSE.md)
