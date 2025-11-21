@@ -33,7 +33,7 @@ Once enabled, you will see a new dockable window in the editor titled **Localiza
 2. This will open your web browser and ask you to **Make a Copy** of the template Google Sheet.
 3. Click **Make a copy** to save it to your own Google Drive.
 
-![Screenshot of an example google sheet] (../addons/localization_sync/screenshots/example_googlesheet.png)
+![Screenshot of an example google sheet](../addons/localization_sync/screenshots/example_googlesheet.png)
 
 ### Step 2: Deploy the Web App
 *This step allows Godot to talk to your spreadsheet.*
@@ -65,7 +65,7 @@ Once enabled, you will see a new dockable window in the editor titled **Localiza
 3. Add language codes (e.g., `en`, `es`, `fr`) in the top row.
 4. Fill in the cells.
 
-![Screenshot of an example google sheet] (../addons/localization_sync/screenshots/example_googlesheet.png)
+![Screenshot of an example google sheet](../addons/localization_sync/screenshots/example_googlesheet.png)
 
 ### Updating the Game
 1. In the Godot Editor, go to the **Localization Auto Sync** dock.
